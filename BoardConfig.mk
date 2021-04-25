@@ -8,6 +8,9 @@
 BOARD_VENDOR := oneplus
 DEVICE_PATH := device/oneplus/guacamole
 
+# Dex
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
