@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Prebuilts
+PRODUCT_PACKAGES += \
+    GalleryGoPrebuilt \
+
 # Remove some prebuilt apps
 PRODUCT_PACKAGES += \
     RemovePackagesDevice
