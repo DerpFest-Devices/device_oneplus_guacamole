@@ -1,0 +1,9 @@
+
+
+prebuilt_etc {
+    name: "fstab.qcom",
+
+    src: "etc/fstab.qcom",
+    proprietary: true,
+
+}
