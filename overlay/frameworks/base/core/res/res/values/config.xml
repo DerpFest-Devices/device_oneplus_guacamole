@@ -36,8 +36,6 @@
          backlight values for lux levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>2</item>
         <item>4</item>
         <item>12</item>
         <item>20</item>
@@ -96,8 +94,6 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2.543</item>
-        <item>3.266</item>
         <item>4.8394</item>
         <item>15.2619</item>
         <item>33</item>
@@ -355,7 +351,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -373,14 +369,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">5000</integer>
-
-    <!-- Slow brightness animation ramp rate in float. -->
-    <item name="config_brightnessRampRateSlowFloat" format="float" type="dimen">0.04</item>
-
-    <!-- Fast brightness animation ramp rate in float. -->
-    <item name="config_brightnessRampRateFastFloat" format="float" type="dimen">0.4058823</item>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
          For this time after the screen turns on, the Power Manager
