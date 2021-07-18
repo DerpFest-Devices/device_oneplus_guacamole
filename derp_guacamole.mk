@@ -20,6 +20,9 @@ TARGET_BOOT_ANIMATION_RES := 1440
 #Official Tag
 DERP_BUILDTYPE := Official
 
+# OOS Gallery
+TARGET_SHIPS_OOSGALLERY := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_guacamole
 PRODUCT_DEVICE := guacamole
