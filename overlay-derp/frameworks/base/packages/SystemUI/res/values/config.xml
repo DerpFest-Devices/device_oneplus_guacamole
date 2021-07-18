@@ -24,4 +24,7 @@
     <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
 
+    <!-- Whether to invert the sim slots for VoLTE/VoWiFi icon -->
+    <bool name="config_invertImsSlots">true</bool>
+
 </resources>
