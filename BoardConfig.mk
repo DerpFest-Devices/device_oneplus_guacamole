@@ -16,6 +16,8 @@ TARGET_SCREEN_DENSITY := 560
 
 # Kernel
 TARGET_KERNEL_CONFIG := sm8150-perf-fbev2_defconfig
+TARGET_KERNEL_BUILD_HOST := derpbox
+TARGET_KERNEL_BUILD_USER := "Pranav"
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
