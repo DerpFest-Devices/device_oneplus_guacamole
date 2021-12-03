@@ -26,5 +26,8 @@
 
     <!-- Whether to invert the sim slots for VoLTE/VoWiFi icon -->
     <bool name="config_invertImsSlots">true</bool>
+    
+    <!-- Color of the UDFPS Pressed view -->
+    <color name="config_udfpsColor">#00ff00</color>
 
 </resources>
