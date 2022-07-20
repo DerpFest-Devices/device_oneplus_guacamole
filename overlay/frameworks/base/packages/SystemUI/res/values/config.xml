@@ -28,4 +28,7 @@
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">174px</dimen>
+
+    <!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">90</integer>
 </resources>
