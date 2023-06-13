@@ -6,5 +6,5 @@
   {
     "repository"  : "kernel_oneplus_sm8150",
     "target_path" : "kernel/oneplus/sm8150"
-  },
+  }
 ]
