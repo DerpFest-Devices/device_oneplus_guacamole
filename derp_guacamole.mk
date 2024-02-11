@@ -17,8 +17,11 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-#Official Tag
+# Official Tag
 DERP_BUILDTYPE := Official
+
+# Gapps
+TARGET_USES_MINI_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_guacamole
