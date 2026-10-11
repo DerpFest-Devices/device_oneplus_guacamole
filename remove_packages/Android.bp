@@ -1,0 +1,62 @@
+//
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_prebuilt_binary {
+    name: "RemovePackages",
+    overrides: [
+        // Large Pixel apps. Velvet stays.
+        "Photos",
+        "PrebuiltGmail",
+        "Maps",
+        "DevicePersonalizationAiAiPrebuiltPixel2025",
+        "CalendarGooglePrebuilt",
+        "GoogleTTS",
+        "talkback",
+        "WeatherPixelPrebuilt_10006113",
+        "DeviceIntelligenceNetworkPrebuiltAstrea",
+        "GoogleContacts",
+        "ScribePrebuilt_v8.7.880674799",
+        "SoundAmplifierPrebuilt_v4.91.886631805",
+        "SafetyHubPrebuilt",
+        "GoogleRestorePrebuilt-v1007163",
+        "FilesPrebuilt",
+        "WellbeingPrebuilt",
+        "DevicePolicyPrebuilt-v10572820",
+        "PrebuiltDeskClockGoogle_76042511",
+        "SwitchAccessPrebuilt_1.17.0.877181440",
+        "NgaResources",
+        "TurboPrebuilt",
+        "Flipendo",
+        "SearchSelectorPrebuilt",
+        "CalculatorGooglePrebuilt_85006267",
+        "EmergencyInfoGoogleNoUi",
+        "LocationHistoryPrebuilt",
+        "TagGoogle",
+        "GooglePrintRecommendationService",
+        "Chrome",
+        "Chrome-Stub",
+
+        // Wallpapers
+        "PixelWallpapers2025",
+        "PixelLiveWallpaperPrebuilt-26000013",
+        "MagicPortraitWallpapers",
+        "WallpaperAIPrebuilt_10000372",
+        "WallpaperEmojiPrebuilt-foldable-wallpaper",
+
+        // Optional ROM packages. UdfpsAnimations is already dropped on other
+        // space-constrained DerpFest devices.
+        "UdfpsAnimations",
+        "FossifyGallery",
+        "Seedvault",
+        "Prospect",
+        "Accord",
+        "Miniature",
+    ],
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    srcs: ["RemovePackages"],
+}

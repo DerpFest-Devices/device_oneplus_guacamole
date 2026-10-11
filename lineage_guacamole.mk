@@ -15,6 +15,9 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Drop Google Messages and the AOSP messaging app it replaces.
+PRODUCT_PACKAGES := $(filter-out PrebuiltBugle messaging,$(PRODUCT_PACKAGES))
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_guacamole
 PRODUCT_DEVICE := guacamole

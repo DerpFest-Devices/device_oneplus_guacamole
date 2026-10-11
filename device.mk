@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk
 
+# Drop optional packages that do not fit the fixed system partition.
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Fastboot
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
